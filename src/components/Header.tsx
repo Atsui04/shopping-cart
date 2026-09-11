@@ -1,4 +1,8 @@
-function Header() {
+interface HeaderProps {
+  length: number | undefined;
+}
+
+function Header({ length = 0 }: HeaderProps) {
   return (
     <header className="border-b border-slate-700">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-6">
@@ -47,7 +51,7 @@ function Header() {
             />
           </svg>
           <span className="rounded-md border border-slate-500 bg-slate-800 px-2 py-1 text-white">
-            0
+            {length ?? 0}
           </span>
         </button>
       </div>
