@@ -9,8 +9,8 @@ To explore and compare mental models, boilerplate code overhead, and re-render o
 ## 🌿 Git Branches
 
 - **`main`** — Pure UI template (Tailwind CSS, static data, no state logic).
-- **`feature/react-state`** — Base implementation using `useState` / `useReducer` + Prop Drilling or React Context.
-- **`feature/zustand`** — State managed with **Zustand** (+ `persist` middleware and optimization via `useShallow`).
+- **`feature/react-state`** — Base implementation using `useState` + Prop Drilling.
+- **`feature/zustand`** — State managed with **Zustand** (+ `persist` middleware).
 - **`feature/redux-toolkit`** — State managed with **Redux Toolkit** (`configureStore`, `createSlice`, `createSelector`, and Redux DevTools).
 
 ## 🧪 Scenarios Tested in Each Branch
