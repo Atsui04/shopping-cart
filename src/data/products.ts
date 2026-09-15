@@ -5,6 +5,10 @@ export interface Product {
   category: string;
 }
 
+export interface CartProduct extends Product {
+  quantity: number;
+}
+
 export const PRODUCTS: Product[] = [
   { id: 1, title: "Mechanical Keyboard", price: 120, category: "Electronics" },
   { id: 2, title: "Wireless Mouse", price: 60, category: "Electronics" },
