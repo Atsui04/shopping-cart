@@ -1,6 +1,10 @@
 import { PRODUCTS } from "../../data/products";
+import { addToCart } from "../../stores/cart/cartSlice";
+import { useAppDispatch } from "../../stores/hooks";
 
 function ProductGrid() {
+  const dispatch = useAppDispatch();
+
   return (
     <div className="flex flex-col gap-6 rounded-xl bg-slate-800 p-6">
       <h2 className="text-center text-2xl font-semibold">Products</h2>
@@ -22,7 +26,10 @@ function ProductGrid() {
               <span className="font-bold text-sky-400">
                 Price: ${prod.price}
               </span>
-              <button className="cursor-pointer rounded-lg bg-blue-600 px-3 py-2 text-sm text-white transition-colors duration-200 hover:bg-blue-500">
+              <button
+                onClick={() => dispatch(addToCart(prod))}
+                className="cursor-pointer rounded-lg bg-blue-600 px-3 py-2 text-sm text-white transition-colors duration-200 hover:bg-blue-500"
+              >
                 Add to cart
               </button>
             </div>
