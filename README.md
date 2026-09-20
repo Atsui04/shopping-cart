@@ -8,9 +8,9 @@ To explore and compare mental models, boilerplate code overhead, and re-render o
 
 ## 🌿 Git Branches
 
-- [`feature/react-state`](https://github.com/Atsui04/shopping-cart/tree/feature/react-state) — Base implementation using `useState` + Prop Drilling.
-- [`feature/zustand`](https://github.com/Atsui04/shopping-cart/tree/feature/zustand) — State managed with **Zustand** (+ `persist` middleware).
-- [`feature/redux-toolkit`](https://github.com/Atsui04/shopping-cart/tree/feature/redux-toolkit) — State managed with **Redux Toolkit** (`configureStore`, `createSlice`, and Redux DevTools).
+- [`feature/react-state`](https://github.com/Atsui04/shopping-cart/tree/feature/react-state) — Base implementation using `useState` + Prop Drilling. [Live demo →](https://shopping-cart-git-feature-react-state-marks-projects-d14cc920.vercel.app/)
+- [`feature/zustand`](https://github.com/Atsui04/shopping-cart/tree/feature/zustand) — State managed with **Zustand** (+ `persist` middleware). [Live demo →](https://shopping-cart-git-feature-zustand-marks-projects-d14cc920.vercel.app/)
+- [`feature/redux-toolkit`](https://github.com/Atsui04/shopping-cart/tree/feature/redux-toolkit) — State managed with **Redux Toolkit** (`configureStore`, `createSlice`, and Redux DevTools). [Live demo →](https://shopping-cart-git-feature-redux-toolkit-marks-projects-d14cc920.vercel.app/)
 
 ## 📊 Findings
 
